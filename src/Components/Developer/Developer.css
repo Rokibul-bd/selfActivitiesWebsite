@@ -1,0 +1,15 @@
+.developer-container {
+    margin-top: 30px;
+}
+
+.developer-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.developer-top img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}

@@ -3,12 +3,21 @@
     grid-template-columns: 4fr 1fr;
 }
 
+.activities-header-text {
+    margin: 80px 70px;
+}
 
 .activities-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin: 130px 70px;
+    margin: 60px 70px;
+}
+
+
+
+.cart-container {
+    box-shadow: rgba(162, 83, 194, 0.4) 10px -10px 0 10px
 }
 
 @media screen and (max-width:576px) {
