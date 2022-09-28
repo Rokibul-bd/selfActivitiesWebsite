@@ -5,7 +5,7 @@ import Developer from '../Developer/Developer';
 import './Home.css'
 const Home = () => {
     const [activities, setActivities] = useState([]);
-
+    const [expTime, setExpTime] = useState(0);
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
@@ -13,7 +13,7 @@ const Home = () => {
     }, [])
 
     const hundleToAddCart = (activiti) => {
-        console.log('clicked')
+        setExpTime(expTime + (+ activiti.time))
     }
     return (
         <div className='home-container'>
@@ -26,7 +26,7 @@ const Home = () => {
                     {
                         activities.map(activiti => <Activities key={activiti.id}
                             activiti={activiti}
-                            hundleToAddCart={hundleToAddCart(activiti.time)}
+                            hundleToAddCart={hundleToAddCart}
                         ></Activities>)
                     }
                 </div>
@@ -38,7 +38,7 @@ const Home = () => {
                     <h4>Exercise Details</h4>
                     <div className='exercise-time'>
                         <div>Exercise time:</div>
-                        <div>200m</div>
+                        <div>{+ expTime} m</div>
                     </div>
                     <div className='exercise-time'>
                         <div>Break time:</div>

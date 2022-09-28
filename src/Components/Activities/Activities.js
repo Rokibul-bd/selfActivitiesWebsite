@@ -1,8 +1,8 @@
 import React from 'react';
 import './Activities.css'
 
-const Activities = (props) => {
-    const { hundleToAddCart, activiti } = props
+const Activities = ({ hundleToAddCart, activiti }) => {
+
     const { name, img, age, details, time } = activiti
     return (
         <div className='single-activiti'>

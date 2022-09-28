@@ -33,7 +33,5 @@
 }
 
 .added-btn:hover {
-    background: transparent;
-    color: purple;
-    outline: 1px solid purple;
+    background-color: rgb(143, 109, 143);
 }
