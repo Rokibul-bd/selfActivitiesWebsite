@@ -1,0 +1,50 @@
+[
+    {
+        "id": "abc_01",
+        "name": "Play Football",
+        "details": "You want to Good fitness you can play Football",
+        "img": "https://ichef.bbci.co.uk/news/400/cpsprodpb/F690/production/_113502136_gettyimages-1184670659.jpg",
+        "time": "300",
+        "age": "15 - 35"
+    },
+    {
+        "id": "abc_02",
+        "name": "Walking",
+        "details": "You want to Good fitness you walking in everyday",
+        "img": "https://static01.nyt.com/images/2022/08/03/well/FITNESS-WALKING-MEALS/FITNESS-WALKING-MEALS-videoSixteenByNine3000.jpg",
+        "time": "200",
+        "age": "25 - 40"
+    },
+    {
+        "id": "abc_03",
+        "name": "Play Cricket",
+        "details": "You want to Enjoy your life can play the game in Cricket",
+        "img": "https://www.tigercricket.com.bd/images/2022/08/1741865311429367.jpg",
+        "time": "400",
+        "age": "20 - 45"
+    },
+    {
+        "id": "abc_04",
+        "name": "Read Book",
+        "details": "You want to very talent person can read the book every",
+        "img": "https://www.oberlo.com/media/1612639204-image3.jpg",
+        "time": "220",
+        "age": "10 - 65"
+    },
+    {
+        "id": "abc_05",
+        "name": "Programing",
+        "details": "You want to Good programmer . you can prectice programing minimum 6 hours",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX7NYUhWe0b-X1PQzTOoqn7FL10eb8CrF83A&usqp=CAU",
+        "time": "500",
+        "age": "17 - 30"
+    },
+    {
+        "id": "abc_06",
+        "name": "Swimming",
+        "details": "You want to Good Swimmner you can try swimming every day an upgrade your trying",
+        "img": "https://cdn.britannica.com/66/162466-131-47ADB66F/Man-butterfly-stroke-pool.jpg",
+        "time": "300",
+        "age": "20 - 35"
+    }
+]

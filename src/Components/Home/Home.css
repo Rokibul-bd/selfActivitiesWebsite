@@ -1,0 +1,22 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+
+.activities-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 130px 70px;
+}
+
+@media screen and (max-width:576px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-container {
+        grid-template-columns: 1fr;
+    }
+}
