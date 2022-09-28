@@ -10,7 +10,7 @@ const Activities = (props) => {
             <p>For Age: {age}</p>
             <p>{details}</p>
             <p>Time required: {time}</p>
-            <button className='added-btn'>Add To Cart</button>
+            <button className='added-btn'>Add To List</button>
         </div>
     );
 };

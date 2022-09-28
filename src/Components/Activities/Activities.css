@@ -5,12 +5,16 @@
     padding: 10px;
     border-radius: 5px;
     background: #fff;
-    box-shadow: 2px -1px 2px #ddd;
+    box-shadow: 5px 1px 2px -5px rgba(84, 78, 143, 0.75);
     position: relative;
 }
 
 .single-activiti img {
     width: 100%;
+}
+
+.single-activiti p {
+    line-height: 13px;
 }
 
 .added-btn {
