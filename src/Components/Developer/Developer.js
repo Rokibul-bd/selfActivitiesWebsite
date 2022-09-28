@@ -9,13 +9,24 @@ const Developer = () => {
                     <img src={DevPhoto} alt="" />
                 </div>
                 <div>
-                    <h4>Md Rokibul Islam</h4>
+                    <h4 style={{ lineHeight: '12px' }}>Md Rokibul Islam</h4>
                     <address>Thakurgaon</address>
                 </div>
             </div>
-            <h4>Md Rokibul Islam</h4>
-            <h5>React Developer</h5>
-            <p>Thakurgaon</p>
+            <div className='developer-info'>
+                <div>
+                    <h3>65 Kg</h3>
+                    <p>Weight</p>
+                </div>
+                <div>
+                    <h3>5.7</h3>
+                    <p>Height</p>
+                </div>
+                <div>
+                    <h3>22Years</h3>
+                    <p>Age</p>
+                </div>
+            </div>
         </div>
     );
 };
