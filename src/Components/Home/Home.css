@@ -20,6 +20,27 @@
     box-shadow: rgba(162, 83, 194, 0.4) 10px -10px 0 10px
 }
 
+.exercise-time {
+    display: flex;
+    justify-content: space-between;
+    background: #ddd;
+    padding: 15px 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.exercise-activities-btn {
+    border: none;
+    background: purple;
+    color: #fff;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
 @media screen and (max-width:576px) {
     .home-container {
         grid-template-columns: 1fr;

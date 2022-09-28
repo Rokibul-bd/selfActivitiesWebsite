@@ -34,6 +34,18 @@ const Home = () => {
             <div className="cart-container">
                 <Developer></Developer>
                 <Break></Break>
+                <div>
+                    <h4>Exercise Details</h4>
+                    <div className='exercise-time'>
+                        <div>Exercise time:</div>
+                        <div>200m</div>
+                    </div>
+                    <div className='exercise-time'>
+                        <div>Break time:</div>
+                        <div>60m</div>
+                    </div>
+                    <button className='exercise-activities-btn'>Activity Complete</button>
+                </div>
             </div>
         </div>
     );
