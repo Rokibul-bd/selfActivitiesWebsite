@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Activities from '../Activities/Activities';
+import Break from '../Break/Break';
 import Developer from '../Developer/Developer';
 import './Home.css'
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
             </div>
             <div className="cart-container">
                 <Developer></Developer>
+                <Break></Break>
             </div>
         </div>
     );
