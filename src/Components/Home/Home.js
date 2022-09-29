@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { addToDb } from '../../utility/fakeDb';
 import Activities from '../Activities/Activities';
 import Break from '../Break/Break';
@@ -16,9 +18,11 @@ const Home = () => {
     }, [])
     useEffect(() => {
         const storedData = localStorage.getItem("time-cart");
-        const data = JSON.parse(storedData);
-        const result = activities.find(activity => activity.id === data);
-        console.log(result)
+        const data = JSON.parse(storedData)
+        const getData = activities.find(singleItem => singleItem.id === data);
+        if (getData) {
+            setTime(getData.time)
+        }
     }, [activities])
     const hundleToAddCart = (activiti) => {
         setExpTime(expTime + (+ activiti.time))
@@ -31,7 +35,7 @@ const Home = () => {
         <div className='home-container'>
             <div>
                 <div className='activities-header-text'>
-                    <h3 className='title-name'>Your Self activities</h3>
+                    <h3 className='title-name'> <FontAwesomeIcon icon={faGamepad} /> Your Self activities</h3>
                     <p>Select todays your exercise</p>
                 </div>
                 <div className="activities-container">
@@ -56,7 +60,7 @@ const Home = () => {
                     <h4>Exercise Details</h4>
                     <div className='exercise-time'>
                         <div>Exercise time:</div>
-                        <div>{+ expTime} m</div>
+                        <div>{+ expTime}m</div>
                     </div>
                     <div className='exercise-time'>
                         <div>Break time:</div>
