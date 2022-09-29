@@ -1,22 +1,10 @@
-.break-container {
-    margin-top: 50px;
-}
-
-.break-btn-container {
-    background: #ddd;
-    border-radius: 15px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.break-container button {
-    border: none;
+.time-btn {
     background: purple;
+    color: #fff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #fff;
+    border: none;
+    padding: 5px;
     cursor: pointer;
 }

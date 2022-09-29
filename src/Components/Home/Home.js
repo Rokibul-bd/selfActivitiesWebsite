@@ -33,7 +33,11 @@ const Home = () => {
             </div>
             <div className="cart-container">
                 <Developer></Developer>
-                <Break></Break>
+                <div className='break-btn-container'>
+                    {
+                        activities.map(activiti => <Break key={activiti.id} activiti={activiti}></Break>)
+                    }
+                </div>
                 <div>
                     <h4>Exercise Details</h4>
                     <div className='exercise-time'>

@@ -41,6 +41,17 @@
     font-size: 17px;
 }
 
+/*Break css*/
+.break-btn-container {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+
 @media screen and (max-width:576px) {
     .home-container {
         grid-template-columns: 1fr;
