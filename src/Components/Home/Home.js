@@ -36,7 +36,7 @@ const Home = () => {
             <div>
                 <div className='activities-header-text'>
                     <h3 className='title-name'> <FontAwesomeIcon icon={faGamepad} /> Your Self activities</h3>
-                    <p>Select todays your exercise</p>
+                    <p className='home-time'>Select todays your exercise</p>
                 </div>
                 <div className="activities-container">
                     {
@@ -49,6 +49,7 @@ const Home = () => {
             </div>
             <div className="cart-container">
                 <Developer></Developer>
+                <h4>Add A Break</h4>
                 <div className='break-btn-container'>
                     {
                         activities.map(activiti => <Break key={activiti.id}

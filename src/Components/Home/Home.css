@@ -4,6 +4,11 @@
     font-weight: 500;
 }
 
+.home-time {
+    font-size: 28px;
+    font-weight: 500;
+}
+
 .home-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -47,7 +52,7 @@
     margin: 50px 0;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
     .home-container {
         grid-template-columns: 1fr;
     }
@@ -58,5 +63,13 @@
 
     p {
         line-height: 16px;
+    }
+
+    .title-name {
+        font-size: 30px;
+    }
+
+    .home-title {
+        font-size: 18px;
     }
 }
