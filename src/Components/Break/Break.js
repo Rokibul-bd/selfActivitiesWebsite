@@ -1,9 +1,9 @@
 import React from 'react';
 import './Break.css'
-const Break = (props) => {
-    const { time } = props.activiti
+const Break = ({ hundleBreakTimeBtn, activiti }) => {
+    const { time } = activiti
     return (
-        <button className='time-btn'>{time}</button>
+        <button onClick={() => hundleBreakTimeBtn(activiti)} className='time-btn'>{time}</button>
     );
 };
 

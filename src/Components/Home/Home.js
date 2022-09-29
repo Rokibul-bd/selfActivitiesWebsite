@@ -6,6 +6,7 @@ import './Home.css'
 const Home = () => {
     const [activities, setActivities] = useState([]);
     const [expTime, setExpTime] = useState(0);
+    const [time, setTime] = useState(0);
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
@@ -14,6 +15,10 @@ const Home = () => {
 
     const hundleToAddCart = (activiti) => {
         setExpTime(expTime + (+ activiti.time))
+    }
+    const hundleBreakTimeBtn = (activiti) => {
+        console.log(activiti.time)
+        setTime(activiti.time)
     }
     return (
         <div className='home-container'>
@@ -35,7 +40,9 @@ const Home = () => {
                 <Developer></Developer>
                 <div className='break-btn-container'>
                     {
-                        activities.map(activiti => <Break key={activiti.id} activiti={activiti}></Break>)
+                        activities.map(activiti => <Break key={activiti.id}
+                            hundleBreakTimeBtn={hundleBreakTimeBtn} activiti={activiti}
+                        ></Break>)
                     }
                 </div>
                 <div>
@@ -46,7 +53,7 @@ const Home = () => {
                     </div>
                     <div className='exercise-time'>
                         <div>Break time:</div>
-                        <div>60m</div>
+                        <div>{time}m</div>
                     </div>
                     <button className='exercise-activities-btn'>Activity Complete</button>
                 </div>
