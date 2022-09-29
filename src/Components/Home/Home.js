@@ -3,6 +3,7 @@ import { addToDb } from '../../utility/fakeDb';
 import Activities from '../Activities/Activities';
 import Break from '../Break/Break';
 import Developer from '../Developer/Developer';
+import Toast from '../Toast/Toast';
 import './Home.css'
 const Home = () => {
     const [activities, setActivities] = useState([]);
@@ -61,7 +62,7 @@ const Home = () => {
                         <div>Break time:</div>
                         <div>{time}m</div>
                     </div>
-                    <button className='exercise-activities-btn'>Activity Complete</button>
+                    <Toast></Toast>
                 </div>
             </div>
         </div>
