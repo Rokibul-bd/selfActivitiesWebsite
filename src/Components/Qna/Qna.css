@@ -1,0 +1,11 @@
+.qna-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and(max-width:576px) {
+    .qna-container {
+        grid-template-columns: 1fr;
+    }
+
+}

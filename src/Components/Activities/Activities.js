@@ -10,7 +10,7 @@ const Activities = ({ hundleToAddCart, activiti }) => {
             <h2>{name}</h2>
             <p>For Age: {age}</p>
             <p>{details}</p>
-            <p>Time required: {time}</p>
+            <p>Time required: {time}m</p>
             <button onClick={() => hundleToAddCart(activiti)} className='added-btn'>Add To List</button>
         </div>
     );

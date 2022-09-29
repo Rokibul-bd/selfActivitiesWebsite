@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb } from '../../utility/fakeDb';
 import Activities from '../Activities/Activities';
 import Break from '../Break/Break';
 import Developer from '../Developer/Developer';
@@ -12,20 +13,25 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])
-
+    useEffect(() => {
+        const storedData = localStorage.getItem("time-cart");
+        const data = JSON.parse(storedData);
+        const result = activities.find(activity => activity.id === data);
+        console.log(result)
+    }, [activities])
     const hundleToAddCart = (activiti) => {
         setExpTime(expTime + (+ activiti.time))
     }
     const hundleBreakTimeBtn = (activiti) => {
-        console.log(activiti.time)
         setTime(activiti.time)
+        addToDb(activiti.id)
     }
     return (
         <div className='home-container'>
             <div>
                 <div className='activities-header-text'>
-                    <h3>This is activities</h3>
-                    <p>amar sonar bangla</p>
+                    <h3 className='title-name'>Your Self activities</h3>
+                    <p>Select todays your exercise</p>
                 </div>
                 <div className="activities-container">
                     {
